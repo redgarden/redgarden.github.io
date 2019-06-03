@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.clear{
+			clear: both;
+		}
+		header{
+			width: 1000px;
+			height: 30px;
+
+		}
+		#logo{
+			margin-top: 10px;
+			float: left;
+		}
+		#top{
+			float: right;
+      margin: 10px 5px 0 0;
+		}
+		nav{
+			width: 1000px;
+			height: 20px;
+			margin-top: 10px;
+			background-color: indianred;
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+		nav ul{
+			display: inline-block;
+			color: white;
+			margin: 0 40px 0 110px;
+
+		}
+		.dropdown{
+			display: inline-block;
+		}
+		.dropdownContents{
+			display: none;
+			background-color: indianred;
+			position: absolute;/*옆으로*/
+			width: 100px;
+			padding: 12px 16px;
+		}
+		.dropdown:hover .dropdownContents{
+			display: block;
+		}
+
+		li{
+			list-style: none;
+		}
+		section{
+			float: left;
+			margin-top: 10px;
+
+		}
+		aside{
+			height: : 355px;
+			float: left;
+			margin-left: 78px;
+			margin-top: 10px;
+			/*border: solid 1px #cccccc;*/
+			padding-left: 25px;
+
+		}
+		aside li{
+			margin-top:  20px;
+			margin-bottom: 20px;
+			margin-right: 30px;
+		}
+		footer{
+			width: 1000px;
+			height: 100px;
+			margin-top: 10px;
+			border: solid 1px #cccccc;
+		}
+		#address{
+			float: left;
+			margin: 30px 0 0 20px;
+		}
+		#customer{
+			float: right;
+			margin: 30px 20px 0 180px;
+		}
+		#page{
+			width: 1000px;
+			margin: auto;
+			//border: solid 1px red;
+		}
+	</style>
+</head>
+<body>
+	<div id="page">
+<header>
+	<div id="logo">
+		MUKBANG
+	</div>
+	<div id="top">
+		로그인 | 회원가입 | 마이페이지 | 고객센터
+	</div>
+</header>
+<div class="clear"></div>
+<nav>
+	<div class="dropdown">
+	<ul>먹방이란?
+	<div class="dropdownContents">
+	<li>1</li>
+	<li>2</li>
+	</div>
+	</div>
+	</ul>
+	<ul>먹방 유튜브</ul>
+	<ul>특별혜택</ul>
+	<ul>이벤트</ul>
+
+</nav>
+<div class="clear"></div>
+<section>
+	<img src="./img/section2.png"  width="750">
+</section>
+<aside>
+	<ul>
+		<br>
+		<li>먹방맛집</li>
+		<li>먹방의 확산</li>
+		<li>핵심혜택</li>
+		<li>이벤트</li>
+	</ul>
+</aside>
+<section class="clear">
+	<img src="./img/section1.png" width="1000">
+</section>
+<div class="clear"></div>
+
+<footer>
+	<div id="address">
+	Copyright 2019. 홍정원 All rights reserved.
+	</div>
+	<div id="customer">
+	컴퓨터정보공학과 20192615 홍정원
+	</div>
+</footer>
+</div>
+</body>
+</html>

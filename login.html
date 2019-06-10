@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>로그인</title>
 	<style>
 		*{
 			padding: 0;
@@ -101,6 +101,62 @@
 			margin: auto;
 			//border: solid 1px red;
 		}
+		table{
+			border-collapse: collapse;
+		}
+		table,th,td{
+			border:solid 0px;
+		}
+		#login{
+			width: 60px;
+			height: 50px;
+			background-color: #b90000;
+			color: white;
+			border-radius: 5px;
+			margin: 10px;
+		}
+		#t1{
+			font-size: 24px;
+			font-weight: bold;
+			color: gray;
+		}
+		.s1{
+			font-weight: bold;
+			padding: 5px 30px;
+			color: white;
+		}
+		#window{
+			background-color: #b90000;
+			opacity: 0.8;
+			margin: 150px auto;
+			border: solid 1px #123456;
+			width: 330px;
+			padding: 20px;
+			font-family: "맑은 고딕","돋움";
+
+		}
+		input[type="text"]{
+							background: white;
+							border-color: gray;
+
+							color: white;
+							height: 20px;
+
+		}
+		input[type="password"]{
+			background-color: white;
+			border-color: gray;
+			color: white;
+			height: 20px;
+		}
+
+		input:focus{
+			background-color: black;
+			opacity: 0.7;
+		}
+		.text{
+			color: white;
+		}
 	</style>
 </head>
 <body>
@@ -137,32 +193,30 @@
 	<ul><img src="./img/event.png"  width="51"></ul>
 
 </nav>
-<div class="clear"></div>
-<section>
-	<img src="./img/section02.png"  width="750">
-</section>
-<aside>
-	<ul>
-		<br>
-		<li><img src="./img/place.png"  width="70"></li>
-		<li><img src="./img/spread.png"  width="83"></li>
-		<li><img src="./img/core.png"  width="70"></li>
-		<li><img src="./img/event1.png"  width="51"></li>
-	</ul>
-</aside>
-<section class="clear">
-	<img src="./img/section01.png" width="1000">
-</section>
-<div class="clear"></div>
-
-<footer>
-	<div id="address">
-	<img src="./img/copyright.png" width="250">
-	</div>
-	<div id="customer">
-	<img src="./img/me.png" width="200">
-	</div>
-</footer>
+<div id="window">
+<table border="1">
+<tr>
+	<td colspan="3" id="t1"><span class="text">LOGIN</span></td>
+</tr>	
+<tr>
+	<td colspan="3"><br></td>
+</tr>	
+<tr>
+	<td><span class="text">아이디</span></td>
+	<td>&nbsp;<input type="text"></td>
+	<td rowspan="2"><input type="submit" id="login" value="로그인"></td>
+</tr>
+<tr>
+	<td><span class="text">비밀번호</span></td>
+	<td>&nbsp;<input type="password"></td>	
+</tr>
+<tr>
+	<td colspan="3"><br></td>
+</tr>	
+<tr>
+	<td colspan="3"><span class="s1">회원가입</span> <span class="s1">아이디/비밀번호찾기</span></td>
+</tr>
+</table>
 </div>
 </body>
 </html>

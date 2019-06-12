@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>회원가입</title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+			text-align: center;
+		}
+		.clear{
+			clear: both;
+		}
+		a{
+			text-decoration: none;
+		}
+		header{
+			width: 1000px;
+			height: 25px;
+		}
+		#logo{
+			margin-top: 10px;
+			float: left;
+		}
+		#top{
+			float: right;
+      margin: 10px 5px 0 0;
+		}
+		nav{
+			width: 1000px;
+			height: 30px;
+			margin-top: 10px;
+			background-color: #B90000;
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+		nav ul{
+			display: inline-block;
+			color: black;
+		    padding-left: 50px;
+		    padding-right: 50px;
+			float: center;
+		}
+		nav li{
+			text-align: center;
+		}
+		.dropdown{
+			display: inline-block;
+		}
+		.dropdownContents{
+			display: none;
+			background-color: white;
+			font-size: 13px;
+			position: absolute;/*옆으로*/
+			width: 70px;
+			padding: 20px 10px;
+			margin: 0px 0 0 0; 
+			opacity: 0.9;
+		}
+		.dropdown:hover .dropdownContents{
+			display: block;
+		}
+	
+		li{
+			list-style: none;
+		}
+
+		footer{
+			width: 1000px;
+			height: 50px;
+			margin-top: 10px;
+			border: solid 1px #828282;
+		}
+		#address{
+			float: left;
+			margin: 15px 0 0 20px;
+		}
+		#customer{
+			float: right;
+			margin: 15px 20px 0 180px;
+		}
+		#page{
+			width: 1000px;
+			margin: auto;
+			//border: solid 1px red;
+		}
+		h3 {
+			text-align: center;
+		}
+		table{
+			height: 300px;
+			border:gray 3px solid;
+			border-collapse: collapse;
+			text-align: center;
+			font-size: 13px;
+			margin: 0 auto;
+		}
+		td{
+			width: 500px;
+			background-color: #ffeeee;
+			padding: 20px 15px;
+			border-bottom:gray 1px solid;
+			text-align: left;
+			
+		}
+		th{
+			background-color: #ffeeee;
+			border-bottom:gray 1px solid;
+			padding: 10px 20px;
+		}
+
+		input[type="text"]{
+			width: 150px;
+		}
+
+
+		input:focus{
+			background-color: #B90000;
+			opacity: 0.5;
+
+		}
+		input[type="radio"],input[type="reset"],input[type="submit"]{
+			cursor: pointer;
+		}
+		.btns{
+			margin: 30px;
+
+		}
+		.btn{
+			width: 100px;
+			margin:10px 10px;
+			padding: 10px;
+			border:none;
+			font-size: 16px;
+		}
+		/*버튼에 마우스를 올려놓았을 때*/
+		.btn:hover{
+			opacity: 0.7;
+		}
+		/*버튼을 누른 시간*/
+		.btn:active{
+			color: red;
+		}
+		.btn-clear{
+			color: white;
+			background-color: black;
+		}
+		.btn-send{
+			color: white;
+			background-color: #b90000;
+		}
+		#dropform{
+			display: none;
+			position: absolute;
+		}
+		#form:hover #dropform{
+			display: block;
+			cursor: pointer;
+			margin-left: 160px;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="page">
+<header>
+	<div id="logo">
+		<a href="https://redgarden.github.io/"><img src="./img/mukbang.png"  width="90"></a>
+	</div>
+	<div id="top">
+		<a href="./login.html"><img src="./img/login.png"  width="42"></a>  <a href="./signup.html"><img src="./img/welcome.png"  width="53"></a>  <a href="./find.html"><img src="./img/find.png"  width="120"></a>  <img src="./img/mypage.png"  width="66">
+	</div>
+</header>
+<div class="clear"></div>
+<nav>
+	<div class="dropdown">
+	<ul><img src="./img/mean.png"  width="75">
+	<div class="dropdownContents">
+	<li><a href="./nav1.html">의미</a></li>
+	<br>
+	<li><a href="./nav2.html">개요</a></li>
+	</div>
+	</div>
+	</ul>
+	<div class="dropdown">
+	<ul><img src="./img/youtube.png"  width="52">
+	<div class="dropdownContents">
+	<li><a href="./you.html">추천</a></li>
+	</div>
+	</div>
+	</ul>
+	<ul><img src="./img/benefit.png"  width="65"></ul>
+	<ul><img src="./img/event.png"  width="51"></ul>
+</nav>
+<div class="clear"></div>
+	<p>
+	<br>
+	<br>
+
+<img src="./img/hand.png" width="20"><div id="form"><h3>회원가입</h3><div><img src="./img/up.png" width="20">
+<p>
+<br>
+
+<div id="dropform">
+<table border="1">
+<tr>
+	<th>* 아이디 :</th>
+	<td><input type="text"></td>
+</tr>
+<tr>
+	<th>* 비밀번호 :</th>
+	<td><input type="text"></td>
+</tr>
+<tr>
+	<th>* 비밀번호 확인 :</th>
+	<td><input type="text"></td>
+</tr>
+<tr>
+	<th>* 성명 :</th>
+	<td><input type="text"></td>
+</tr>
+<tr>
+	<th>* 성별 :</th>
+	<td><input type="radio" name="gender"> 남자
+		<input type="radio" name="gender"> 여자
+	</td>
+</tr>
+ <tr>
+   <th>* 주소 </th>
+   <td>
+    <input type="text">
+    <input type="button" value = "주소찾기">
+   </td>
+  </tr>
+  <tr>
+   <th>* 상세주소 </th>
+   <td>
+    <input type="text">
+   </td>
+  </tr>
+
+<tr>
+	<th>집 전화 :</th>
+	<td><input type="text"></td>
+</tr>
+<tr>
+	<th>* 휴대 전화 :</th>
+	<td><input type="text"></td>
+</tr>
+<tr>
+	<th>* 메일 주소 :</th>
+	<td><input type="text" > &nbsp;<b>@&nbsp;</b> <input type="text" >
+	    <select>
+     <option> 직접입력 </option>
+     <option> naver.com </option>
+     <option> daum.net </option>
+     <option> gmail.com </option>
+    </select>
+
+</td>
+</tr>
+
+</table>
+
+<div class="btns">
+<input type="submit" value="회원가입" class="btn btn-send">
+<input type="reset" value="취소" class="btn btn-clear">
+</div>
+</div>
+</body>
+</html>
